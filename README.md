@@ -27,6 +27,8 @@ The app should now be running at http://localhost:8080/
 - the only way to mutate the state is to emit an action, an object describing what happened.
 - to specify how the state tree is transformed by actions, you write pure [reducers](http://rackt.github.io/redux/docs/Glossary.html#reducer).
 
+Async logic can be habled by using the [redux-thunk](https://github.com/gaearon/redux-thunk) middleware. You can see an example of this [here](https://github.com/moudy/reddit-react/blob/master/app/actions/index.js#L19-L29) or a more deatiled explination [here](https://github.com/rackt/redux/blob/master/docs/advanced/AsyncActions.md).
+
 See [the docs](http://rackt.github.io/redux/docs/introduction/index.html) for more details.
 
 ## Folder structure
